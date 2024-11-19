@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="authtor" content="Rifki Junianto Putra" />
+    <meta name="description" content="Tugas 9 Cloning website" />
+    <title>Tugas modul 9 Komiku</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-light-grey">
+    <header>
+      <!-- As a link -->
+        <nav class="navbar bg-body-tertiary d-flex border-bottom border-2" style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+                <a class="navbar-brand fs-2 align-items-center fw-bold" href="#">
+                    <img src="assets/images/logo komiku.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top img-fluid">
+                    <span>| Komiku</span>
+                </a>
+                <ul class="nav justify-content-center fs-2 d-flex align-items-center">
+                    <li class="nav-item me-3"> <!-- Kelas 'me-3' untuk margin-end -->
+                        <a class="nav-link active text-decoration-none text-reset" aria-current="page" href="#">Seru</a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="mx-2" style="opacity: 0.5;">|</span> <!-- Mengatur transparansi -->
+                    </li>
+                    <li class="nav-item me-3"> 
+                        <a class="nav-link text-decoration-none text-reset" href="#">Baru</a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="mx-2" style="opacity: 0.5;">|</span>
+                    </li>
+                    <li class="nav-item me-3"> 
+                        <a class="nav-link text-decoration-none text-reset" href="#">Warna</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Komiku.id" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <!-- As a heading -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <button class="btn btn-primary sm-1 fs-5">webAPP Komiku</button>
+                <button class="btn btn-outline-secondary sm-1 fs-5">Beranda</button>
+                <button class="btn btn-outline-secondary sm-1 fs-5">Terbaru</button>
+                <button class="btn btn-outline-secondary sm-1 fs-5">Daftar Komik</button>
+                <button class="btn btn-outline-secondary sm-1 fs-5">8Kaijuu</button>
+                <button class="btn btn-outline-secondary sm-1 fs-5">Isekai</button>
+                <button class="btn btn-outline-secondary sm-1 fs-5">Fantasy</button>
+                <button class="btn btn-outline-secondary sm-1 fs-5">Rak Buku</button>
+            </div>
+        </nav>
+    </header>
+    <!-- Main -->
+    <div class="container my-5">
+        <div class="bg-light border rounded-3 p-4">
+            <h2 class="mb-4 fw-bold border-bottom border-3 fs-4">Komiku - Baca Komik</h2>
+            <p class="text-muted">
+                Selamat datang di website Komiku, situs baca komik, baca manga, baca manhua, dan baca manhwa terpopuler di Indonesia. 
+                Tanpa iklan yang mengganggu dan hanya di Komiku kamu cukup <b>scrolling</b> untuk melihat chapter berikutnya, mudah dan tidak ribet.
+            </p>
+            <h4 class="mb-3">Baca Manga Terpopuler Minggu Ini</h4>
+            <div class="d-flex overflow-auto gap-3" style="scroll-snap-type: x mandatory;">
+                <!-- Card 1 -->
+                <div class="col-md-3 card flex-shrink-0" style="width: 200px; scroll-snap-align: start;">
+                    <img src="assets/images/Shikanoko.png" class="card-img-top" alt="Shikanoko Noko...">
+                    <div class="card-body">
+                        <a class="card-title text-decoration-none" href=# >Shikanoko Noko...</a>
+                        <p class="card-text text-muted">Komedi</p>
+                        <p class="btn btn-secondary btn-sm">Chapter 38</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-3 card flex-shrink-0" style="width: 200px; scroll-snap-align: start;">
+                    <img src="assets/images/shinmai.png" class="card-img-top" alt="Shinmai Ossan...">
+                    <div class="card-body">
+                        <a class="card-title text-decoration-none" href=# >Shinmai Ossan...</a>
+                        <p class="card-text text-muted">Fantasi</p>
+                        <p class="btn btn-secondary btn-sm">Chapter 11</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-3 card flex-shrink-0" style="width: 200px; scroll-snap-align: start;">
+                    <img src="assets/images/kimi_to.png" class="card-img-top" alt="Kimi to Boku no...">
+                    <div class="card-body">
+                        <a class="card-title text-decoration-none" href=# >Kimi to Boku no...</a>
+                        <p class="card-text text-muted">Fantasi</p>
+                        <p class="btn btn-secondary btn-sm">Chapter 43</p>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-md-3 card flex-shrink-0" style="width: 200px; scroll-snap-align: start;">
+                    <img src="assets/images/Make_Heroine.png" class="card-img-top" alt="Make Heroine ga...">
+                    <div class="card-body">
+                        <a class="card-title text-decoration-none" href=# >Make Heroine ga...</a>
+                        <p class="card-text text-muted">Drama</p>
+                        <p class="btn btn-secondary btn-sm">Chapter 17.5</p>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="col-md-3 card flex-shrink-0" style="width: 200px; scroll-snap-align: start;">
+                    <img src="assets/images/hazure.png" class="card-img-top" alt="Extra Manga...">
+                    <div class="card-body">
+                        <a class="card-title text-decoration-none" href=# >Hazure Waku no jaoutai ijou</a>
+                        <p class="card-text text-muted">action</p>
+                        <p class="btn btn-secondary btn-sm">Chapter 53</p>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="col-md-3 card flex-shrink-0" style="width: 200px; scroll-snap-align: start;">
+                    <img src="assets/images/Gimai.png" class="card-img-top" alt="Extra Manga...">
+                    <div class="card-body">
+                        <a class="card-title text-decoration-none" href=# >Gimai Seikatsu.</a>
+                        <p class="card-text text-muted">Romance</p>
+                        <p class="btn btn-secondary btn-sm">Chapter 21</p>
+                    </div>
+                </div>
+                <!-- Card 7 -->
+                <div class="col-md-3 card flex-shrink-0" style="width: 200px; scroll-snap-align: start;">
+                    <img src="assets/images/Ore_wa.png" class="card-img-top" alt="Extra Manga...">
+                    <div class="card-body">
+                        <a class="card-title text-decoration-none" href=# >Ore Wa Subeto wo parry suru</a>
+                        <p class="card-text text-muted">Fantasi</p>
+                        <p class="btn btn-secondary btn-sm">Chapter 12</p>
+                    </div>
+                </div>
+                <!-- Card 8 -->
+                <div class="col-md-3 card flex-shrink-0" style="width: 200px; scroll-snap-align: start;">
+                    <img src="assets/images/Fairy_tail.png" class="card-img-top" alt="Fairy Tail: 100 years quest">
+                    <div class="card-body">
+                        <a class="card-title text-decoration-none" href=# >Fairy Tail: 100 Years Quest</a>
+                        <p class="card-text text-muted">Fantasi</p>
+                        <p class="btn btn-secondary btn-sm">Chapter 167</p>
+                    </div>
+                </div>
+                <!-- Card 9 -->
+                <div class="col-md-3 card flex-shrink-0" style="width: 200px; scroll-snap-align: start;">
+                    <img src="assets/images/Maou_gun.png" class="card-img-top" alt="Maou Gun Saikyou no Majutsushi">
+                    <div class="card-body">
+                        <a class="card-title text-decoration-none" href=# >Maou Gun Saikyou no Majutsushi</a>
+                        <p class="card-text text-muted">Isekai</p>
+                        <p class="btn btn-secondary btn-sm">Chapter 24.2</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- pencarian komik -->
+    <div class="container my-5">
+        <div class="bg-light border rounded-3 p-4">
+            <h2 class="mb-4 fw-bold border-bottom border-3 fs-4">Perpustakaan Komik</h2>
+            <p class="text-muted fs-6" style="opacity: 75%;">
+                jelajahi <b>5605</b> judul komik dari <b>288156</b> jumlah champter di komiku.
+            </p>
+            <div class="btn-group d-flex flex-wrap">
+                <div class="dropdown col-6 col-md-3">
+                    <a id="genre_1" class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Genre 1
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="genre_1">
+                        <li><a class="dropdown-item" href="#" onclick="setDropdownValue('Action', 'genre_1')">Action</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setDropdownValue('Drama', 'genre_1')">Drama</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setDropdownValue('Fantasi', 'genre_1')">Fantasi</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setDropdownValue('Isekai', 'genre_1')">Isekai</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setDropdownValue('Romantis', 'genre_1')">Romantis</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown col-6 col-md-3">
+                    <a id="genre_2" class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        genre 2
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="genre_2">
+                        <li><a class="dropdown-item" href="#" onclick="setDropdownValue('Action', 'genre_2')">Action</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setDropdownValue('Drama', 'genre_2')">Drama</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setDropdownValue('Fantasi', 'genre_2')">Fantasi</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setDropdownValue('Isekai', 'genre_2')">Isekai</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setDropdownValue('Romantis', 'genre_2')">Romantis</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown col-6 col-md-3">
+                    <a id="status" class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Status
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="status">
+                        <li><a class="dropdown-item" href="#" onclick="setDropdownValue('Ongoing', 'status')">Ongoing</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="setDropdownValue('Tamat', 'status')">Tamat</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <button class="btn btn-outline-secondary" type="button" onclick="performSearch()">Search</button>
+                </div>
+            </div>
+            <p class="text-muted fs-6 mt-3" style="opacity: 75%;">
+                *yang perlu diidi cuma satu form, terlalu banyak form yang diisi bisa kosong hasil pencariannya
+            </p>
+        </div>
+    </div>
+    <!-- Manga Terpopuler -->
+    <div class="container my-5">
+        <div class="bg-light border rounded-3 p-4">
+            <h2 class="mb-4 fw-bold fs-4">Manga Terpopuler</h2>
+            <div class="d-flex overflow-auto gap-3" style="scroll-snap-type: x mandatory;">
+                <!-- Card 1 -->
+                <div class="col-md-3 card flex-shrink-0" style="width: 200px; scroll-snap-align: start;">
+                    <img src="assets/images/one-piece.png" class="card-img-top" alt="Shikanoko Noko...">
+                    <div class="card-body">
+                        <a class="card-title text-decoration-none" href=# >One Piece</a>
+                        <p class="card-text text-muted">Aksi</p>
+                        <p class="btn btn-secondary btn-sm">Chapter 1131</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-3 card flex-shrink-0" style="width: 200px; scroll-snap-align: start;">
+                    <img src="assets/images/boruto.png" class="card-img-top" alt="Boruto">
+                    <div class="card-body">
+                        <a class="card-title text-decoration-none" href=# >Boruto</a>
+                        <p class="card-text text-muted">Fantasi</p>
+                        <p class="btn btn-secondary btn-sm">Chapter 80</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-3 card flex-shrink-0" style="width: 200px; scroll-snap-align: start;">
+                    <img src="assets/images/opm.png" class="card-img-top" alt="OPM">
+                    <div class="card-body">
+                        <a class="card-title text-decoration-none" href=# >One Punch man</a>
+                        <p class="card-text text-muted">Aksi</p>
+                        <p class="btn btn-secondary btn-sm">Chapter 258.3(spesial)</p>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-md-3 card flex-shrink-0" style="width: 200px; scroll-snap-align: start;">
+                    <img src="assets/images/black-clover.png" class="card-img-top" alt="Black Clover">
+                    <div class="card-body">
+                        <a class="card-title text-decoration-none" href=# >Black Clover</a>
+                        <p class="card-text text-muted">Aksi</p>
+                        <p class="btn btn-secondary btn-sm">Chapter 375</p>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="col-md-3 card flex-shrink-0" style="width: 200px; scroll-snap-align: start;">
+                    <img src="assets/images/tensei.png" class="card-img-top" alt="tensei Shitara Slime">
+                    <div class="card-body">
+                        <a class="card-title text-decoration-none" href=# >Tensei Shitara Slime datta ken</a>
+                        <p class="card-text text-muted">Isekai</p>
+                        <p class="btn btn-secondary btn-sm">Chapter 117</p>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="col-md-3 card flex-shrink-0" style="width: 200px; scroll-snap-align: start;">
+                    <img src="assets/images/bnha.png" class="card-img-top" alt="Boku No Hero Academia">
+                    <div class="card-body">
+                        <a class="card-title text-decoration-none" href=# >Boku No Hero Academia</a>
+                        <p class="card-text text-muted">Aksi</p>
+                        <p class="btn btn-secondary btn-sm">Chapter 430</p>
+                    </div>
+                </div>
+                <!-- Card 7 -->
+                <div class="col-md-3 card flex-shrink-0" style="width: 200px; scroll-snap-align: start;">
+                    <img src="assets/images/kanojo.png" class="card-img-top" alt="Kanojo Okarishimasu">
+                    <div class="card-body">
+                        <a class="card-title text-decoration-none" href=# >Kanojo Okarishimasu</a>
+                        <p class="card-text text-muted">Romantis</p>
+                        <p class="btn btn-secondary btn-sm">Chapter 25</p>
+                    </div>
+                </div>
+                <!-- Card 8 -->
+                <div class="col-md-3 card flex-shrink-0" style="width: 200px; scroll-snap-align: start;">
+                    <img src="assets/images/kimetsu.png" class="card-img-top" alt="Kimetsu No Yaiba">
+                    <div class="card-body">
+                        <a class="card-title text-decoration-none" href=# >Kimetsu No Yaiba</a>
+                        <p class="card-text text-muted">Aksi</p>
+                        <p class="btn btn-secondary btn-sm">Chapter 25</p>
+                    </div>
+                </div>
+            </div>
+            <div class="nav justify-content-center mt-3">
+                <a href="#" class="btn btn-secondary me-2">Manhwa Populer</a>
+                <a href="#" class="btn btn-secondary me-2">Manga Baru</a>
+                <a href="#" class="btn btn-secondary me-2">daftar Manga</a>
+            </div>
+        </div>
+    </div>
+    <!-- manhwa populer hari ini -->
+    <div class="container my-5">
+        <div class="bg-light border rounded-3 p-4">
+            <h2 class="mb-4 fw-bold fs-4">Manhwa Populer Hari Ini</h2>
+            <div class="d-flex overflow-auto gap-3" style="scroll-snap-type: x mandatory;">
+                <!-- Card 1 -->
+                <div class="col-md-3 card flex-shrink-0" style="width: 200px; scroll-snap-align: start;">
+                    <img src="assets/images/the_knight.png" class="card-img-top" alt="The Knight Who Return With A God">
+                    <div class="card-body">
+                        <a class="card-title text-decoration-none" href=# >The Knight Who Return With A God</a>
+                        <p class="card-text text-muted">fantasi 1jt pembaca</p>
+                        <p class="btn btn-secondary btn-sm">Chapter 88</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-3 card flex-shrink-0" style="width: 200px; scroll-snap-align: start;">
+                    <img src="assets/images/holy_emperor.png" class="card-img-top" alt="Holy Emperor Grandson Is A Necromancer">
+                    <div class="card-body">
+                        <a class="card-title text-decoration-none" href=# >Holy Emperor Grandson Is A Necromancer</a>
+                        <p class="card-text text-muted">Fantasi 336rb pembaca</p>
+                        <p class="btn btn-secondary btn-sm">Chapter 58</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-3 card flex-shrink-0" style="width: 200px; scroll-snap-align: start;">
+                    <img src="assets/images/reincarnation.png" class="card-img-top" alt="Reincarnation Of The Swordmaster">
+                    <div class="card-body">
+                        <a class="card-title text-decoration-none" href=# >Reincarnation Of The Swordmaster</a>
+                        <p class="card-text text-muted">Fantasi</p>
+                        <p class="btn btn-secondary btn-sm">Chapter 40</p>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-md-3 card flex-shrink-0" style="width: 200px; scroll-snap-align: start;">
+                    <img src="assets/images/what's.png" class="card-img-top" alt="What's Our hero Doing?">
+                    <div class="card-body">
+                        <a class="card-title text-decoration-none" href=# >What's Our hero Doing?</a>
+                        <p class="card-text text-muted">Fantasi 226rb pembaca</p>
+                        <p class="btn btn-secondary btn-sm">Chapter 35</p>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="col-md-3 card flex-shrink-0" style="width: 200px; scroll-snap-align: start;">
+                    <img src="assets/images/the_return.png" class="card-img-top" alt="The Return Of The Mythical Archmage">
+                    <div class="card-body">
+                        <a class="card-title text-decoration-none" href=# >The Return Of The Mythical Archmage</a>
+                        <p class="card-text text-muted">Fantasi 44rb pembaca</p>
+                        <p class="btn btn-secondary btn-sm">Chapter 25</p>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="col-md-3 card flex-shrink-0" style="width: 200px; scroll-snap-align: start;">
+                    <img src="assets/images/superhuman.png" class="card-img-top" alt="Superhuman Battelfield">
+                    <div class="card-body">
+                        <a class="card-title text-decoration-none" href=# >Superhuman Battelfield</a>
+                        <p class="card-text text-muted">Fantasi 1.1jt pembaca</p>
+                        <p class="btn btn-secondary btn-sm">Chapter 133</p>
+                    </div>
+                </div>
+                <!-- Card 7 -->
+                <div class="col-md-3 card flex-shrink-0" style="width: 200px; scroll-snap-align: start;">
+                    <img src="assets/images/academy.png" class="card-img-top" alt="Trancension Academy">
+                    <div class="card-body">
+                        <a class="card-title text-decoration-none" href=# >Trancension Academy</a>
+                        <p class="card-text text-muted">Aksi 1.8jt pembaca</p>
+                        <p class="btn btn-secondary btn-sm">Chapter 135</p>
+                    </div>
+                </div>
+                <!-- Card 8 -->
+                <div class="col-md-3 card flex-shrink-0" style="width: 200px; scroll-snap-align: start;">
+                    <img src="assets/images/Fairy_tail.png" class="card-img-top" alt="Extra Manga...">
+                    <div class="card-body">
+                        <a class="card-title text-decoration-none" href=# >Extra Manga...</a>
+                        <p class="card-text text-muted">Aksi</p>
+                        <p class="btn btn-secondary btn-sm">Chapter 25</p>
+                    </div>
+                </div>
+                <!-- Card 9 -->
+                <div class="col-md-3 card flex-shrink-0" style="width: 200px; scroll-snap-align: start;">
+                    <img src="assets/images/Maou_gun.png" class="card-img-top" alt="Extra Manga...">
+                    <div class="card-body">
+                        <a class="card-title text-decoration-none" href=# >Extra Manga...</a>
+                        <p class="card-text text-muted">Aksi</p>
+                        <p class="btn btn-secondary btn-sm">Chapter 25</p>
+                    </div>
+                </div>
+            </div>
+            <div class="nav justify-content-center mt-3">
+                <a href="#" class="btn btn-secondary me-2">Manhwa Populer</a>
+                <a href="#" class="btn btn-secondary me-2">Manhwa Populer</a>
+                <a href="#" class="btn btn-secondary me-2">Manhwa Populer</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="container-fluid py-3 bg-light">
+        <div class="row">
+          <div class="col text-center">
+            <a href="#">
+              <img src="assets/images/logo komiku.png" alt="Komiku Logo" height="40">
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <p class="mb-0 " style="opacity: 0.5;">&copy; Komiku id. All rights reserved.</p>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+              <ul class="list-inline mb-0">
+                <li class="list-inline-item">
+                  <a href="#" class="text-decoration-none text-dark">Baca Komik</a>
+                </li>
+                <li class="list-inline-item">|</li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-decoration-none text-dark">Baca Manga</a>
+                </li>
+                <li class="list-inline-item">|</li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-decoration-none text-dark">Baca Manhwa</a>
+                </li>
+                <li class="list-inline-item">|</li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-decoration-none text-dark">Baca Manhua</a>
+                </li>
+                <li class="list-inline-item">|</li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-decoration-none text-dark">DMCA</a>
+                </li>
+                <li class="list-inline-item">|</li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-decoration-none text-dark">Terms of Usage</a>
+                </li>
+                <li class="list-inline-item">|</li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-decoration-none text-dark">Privacy Policy</a>
+                </li>
+                <li class="list-inline-item">|</li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-decoration-none text-dark">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        function changeText(newText) {
+            document.getElementById("dropdownMenuLink").innerText = newText;
+        }
+        
+        function setDropdownValue(value, dropdownId) {
+            document.getElementById(dropdownId).innerText = value; // Set the dropdown button text to the selected value
+        }
+
+        function performSearch() {
+            const dropdownValue1 = document.getElementById('genre_1').innerText;
+            const dropdownValue2 = document.getElementById('genre_2').innerText;
+            const dropdownValue3 = document.getElementById('status').innerText;
+            alert('Searching for: ' + dropdownValue1 + ' and ' + dropdownValue2 + ' dan ' + dropdownValue3);
+        }
+    </script>
+  </body>
+</html>

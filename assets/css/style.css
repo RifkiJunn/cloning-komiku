@@ -1,0 +1,11 @@
+.vertical-line {
+    margin: 0 10px; /* Jarak antara garis dan item */
+    color: #000; /* Warna garis */
+}
+.bg-light-grey {
+    background-color: #d3d3d3; /* Warna light grey */
+}
+/* Animasi scrolling lebih halus */
+.d-flex.overflow-auto {
+    scroll-behavior: smooth;
+}
